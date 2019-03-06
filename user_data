@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo yum install -y httpd 2> var/log/error1.txt
+sudo service httpd restart 2> var/log/error2.txt
+sudo echo "<html><head><title>Hello World</title></head><body><h1>Hello World!</h1></body></html>" > /var/www/html/index.html
